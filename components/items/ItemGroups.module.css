@@ -1,0 +1,58 @@
+.container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.formContainer {
+  margin-bottom: 20px;
+}
+
+.filterContainer {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tableContainer {
+  flex-grow: 1;
+  margin-top: 10px;
+  width: 100%;
+  overflow-y: auto;
+}
+
+.paginationContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  background-color: white;
+  border: 2px solid #000;
+  box-shadow: 24px;
+  padding: 16px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+  .filterContainer {
+    flex-direction: column;
+  }
+  .paginationContainer {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
